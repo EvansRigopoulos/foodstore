@@ -1,0 +1,81 @@
+.menuSection {
+  text-align: center;
+  padding: 100px 20px;
+  margin-top: 100px;
+  position: relative;
+  background: url("https://scontent.fath6-1.fna.fbcdn.net/v/t39.30808-6/302098686_556684349585693_2035799082300927225_n.jpg?_nc_cat=109&ccb=1-7&_nc_sid=6ee11a&_nc_eui2=AeGs4z59rLSOeW-mb14sbGn2FCIaPIZmpwgUIho8hmanCHk4bh47B-uNVN1sN2zoCR0&_nc_ohc=UVC21r3qDdkQ7kNvgHJdXjq&_nc_ht=scontent.fath6-1.fna&_nc_gid=ATrLARCWg5XYqsozUM7EiLy&oh=00_AYC1h35W_muzyyzsf_dgq9Qq3UlqgXIQayZhu51nR0jHxw&oe=66F67446")
+    no-repeat center center;
+  background-size: cover;
+  min-height: 500px;
+  border-radius: 10px; /* Optional: rounded corners */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Optional: shadow for depth */
+}
+
+.menuSectionTitle {
+  font-size: 2rem;
+  margin-bottom: 30px;
+  color: white; /* Ensure the title is visible */
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.7); /* Optional: add a shadow for better readability */
+}
+
+.menuItemContainer {
+  perspective: 1000px; /* Enable 3D perspective */
+  display: inline-block; /* Ensure the container only takes the space needed */
+}
+
+.menuItem {
+  width: 300px; /* Fixed width for consistency */
+  height: auto; /* Allow height to adjust based on content */
+  position: relative;
+  transform-style: preserve-3d; /* Allow 3D transformations */
+  transition: transform 0.6s; /* Smooth transition */
+  margin: 0 auto; /* Center the item container */
+}
+
+.flip {
+  transform: rotateY(180deg); /* Flipped state */
+}
+
+.menuCard {
+  backface-visibility: hidden; /* Hide the back side when not facing */
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  padding: 20px;
+  margin: 10px;
+  background-color: rgba(255, 255, 255, 0.9); /* Semi-transparent background */
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.menuItemHeader {
+  display: flex;
+  justify-content: space-between; /* Align title and price */
+  align-items: center; /* Center vertically */
+}
+
+.menuItemName {
+  margin: 0; /* Reset margin */
+}
+
+.menuItemPrice {
+  font-weight: bold; /* Make price stand out */
+}
+
+.menuItemDescription {
+  margin-top: 10px; /* Add spacing above the description */
+}
+
+.turnPageButton {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  padding: 10px 15px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.turnPageButton:hover {
+  background-color: #0056b3;
+}

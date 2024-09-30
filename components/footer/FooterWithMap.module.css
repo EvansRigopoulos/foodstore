@@ -1,0 +1,51 @@
+.footer {
+  background-color: #333;
+  color: #fff;
+  padding: 40px 20px;
+  text-align: center;
+}
+
+.container {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.contactInfo {
+  flex: 1;
+  padding: 10px;
+  min-width: 250px;
+  text-align: left;
+}
+
+.mapContainer {
+  flex: 1;
+  padding: 10px;
+  min-width: 250px;
+  text-align: left;
+}
+
+.iframe {
+  border: none;
+  border-radius: 8px;
+}
+
+.socialMedia {
+  flex: 1;
+  padding: 10px;
+  min-width: 250px;
+  text-align: center;
+}
+
+.icon {
+  margin: 0 10px;
+  color: #fff;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.icon:hover {
+  color: #0d6efd; /* Change color on hover */
+}
