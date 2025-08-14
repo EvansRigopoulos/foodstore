@@ -14,12 +14,12 @@ function AboutPage() {
     en: {
       title: "About Us",
       text: ` THE BEST CHICKEN DELICACY YOU MUST TRY!!! GOUNARI 2 IN ELLINIKO HOME
-        DELIVERY FROM 11:30 AM TO 12:00 AM`,
+        DELIVERY FROM 12:00 PM TO 11:30 AM`,
     },
     gr: {
       title: "Σχετικά με Εμάς",
       text: `      Η ΚΑΛΥΤΕΡΗ ΚΟΤΟΝΟΣΤΙΜΙΑ ΠΟΥ ΠΡΕΠΕΙ ΝΑ ΔΟΚΙΜΑΣΕΤΕ !!! ΓΟΥΝΑΡΗ 2 ΣΤΟ
-        ΕΛΛΗΝΙΚΟ ΠΑΡΑΔΟΣΗ ΚΑΤ ΟΙΚΟΝ ΑΠΟ 11.30π.μ. ΕΩΣ 12.00μ.μ.`,
+        ΕΛΛΗΝΙΚΟ ΠΑΡΑΔΟΣΗ ΚΑΤ ΟΙΚΟΝ ΑΠΟ 12.00π.μ. ΕΩΣ 11.30μ.μ.`,
     },
   };
 
