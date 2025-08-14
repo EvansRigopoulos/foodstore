@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import "./globals.css";
-
+import { SpeedInsights } from "@vercel/speed-insights/next";
 import { LanguageProvider } from "./context/LanguageContext";
 import Navbar from "@/components/navbar/navbar";
 import Container from "@/components/global/container";
@@ -43,6 +43,7 @@ export default function RootLayout({
           </main>
           <FooterWithMap />
         </LanguageProvider>
+        <SpeedInsights />
       </body>
     </html>
   );
