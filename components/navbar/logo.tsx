@@ -4,14 +4,13 @@ import Image from "next/image";
 
 export default function Logo() {
   return (
-    <div>
-      <Image
-        src="https://i.postimg.cc/VL8Lktjf/logo.jpg"
-        alt="To Diamanti"
-        width={100}
-        height={100}
-        className="sm:w-20"
-      />
-    </div>
+    <Image
+      src="https://i.postimg.cc/zvPdJGFZ/new-logo.jpg"
+      alt="To Diamanti"
+      width={700}
+      height={700}
+      className="w-48 h-48 sm:w-56 sm:h-56 lg:w-72 lg:h-72 xl:w-80 xl:h-80 object-contain"
+      priority
+    />
   );
 }

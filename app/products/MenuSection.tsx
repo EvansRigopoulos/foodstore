@@ -41,9 +41,18 @@ const MenuSection: React.FC = () => {
           </div>
         ))}
       </div>
-      <button className={styles.turnPageButton} onClick={handlePageTurn}>
-        {language === "en" ? "Turn Page" : "Επόμενη Σελίδα"}
-      </button>
+      <div className={styles.buttonContainer}>
+        <button className={styles.turnPageButton} onClick={handlePageTurn}>
+          {language === "en" ? "Turn Page" : "Επόμενη Σελίδα"}
+        </button>
+        <a
+          href="https://drive.google.com/uc?export=download&id=10HSQoOibMLDMnZQ_mx6AjIQTwE9UXRT9"
+          download="Diamanti-Restaurant-Menu.pdf"
+          className={styles.downloadButton}
+        >
+          {language === "en" ? "📄 Download Menu" : "📄 Κατεβάστε το Μενού"}
+        </a>
+      </div>
     </section>
   );
 };

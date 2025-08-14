@@ -7,11 +7,18 @@ import Dropdown from "./dropdown";
 function Navbar() {
   return (
     <nav className="border-b">
-      <Container className="flex flex-col items-center justify-center sm:flex-row sm:justify-between sm:items-center flex-wrap py-8">
-        <Logo />
-        <div>
+      <Container className="flex flex-col items-center justify-center py-8">
+        {/* Language flags at the top */}
+        <div className="flex items-center justify-center mb-6">
           <Translate />
-          <Dropdown />
+          <div className="ml-4">
+            <Dropdown />
+          </div>
+        </div>
+
+        {/* Logo centered below */}
+        <div className="flex justify-center">
+          <Logo />
         </div>
       </Container>
     </nav>

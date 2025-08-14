@@ -17,46 +17,109 @@ const Translate: React.FC = () => {
   };
 
   return (
-    <div style={{ textAlign: "center", padding: "20px" }}>
-      {/* Display the current language */}
-      <h2>
-        {language === "en"
-          ? "Selected Language: English"
-          : "Επιλεγμένη Γλώσσα: Ελληνικά"}
-      </h2>
-
-      {/* Buttons for changing the language */}
-      <div>
-        <button
-          onClick={() => changeLanguage("gr")}
-          aria-label="Switch to Greek"
+    <div
+      style={{
+        display: "flex",
+        alignItems: "center",
+        gap: "12px",
+        padding: "8px",
+        backgroundColor: "#f8f9fa",
+        borderRadius: "12px",
+        boxShadow: "0 2px 8px rgba(0,0,0,0.1)",
+      }}
+    >
+      {/* Greek Language Button */}
+      <div
+        style={{
+          display: "flex",
+          flexDirection: "column",
+          alignItems: "center",
+          cursor: "pointer",
+          padding: "6px",
+          borderRadius: "8px",
+          backgroundColor: language === "gr" ? "#e3f2fd" : "transparent",
+          transition: "all 0.3s ease",
+          border:
+            language === "gr" ? "2px solid #1976d2" : "2px solid transparent",
+        }}
+        onClick={() => changeLanguage("gr")}
+      >
+        <div
           style={{
-            margin: "10px",
-            padding: "10px",
             backgroundImage: `url(${greekFlag})`,
             backgroundSize: "cover",
-            width: "50px", // Adjust width for visibility
-            height: "30px", // Adjust height for visibility
+            width: "32px",
+            height: "22px",
             backgroundPosition: "center",
-            border: "none",
-            cursor: "pointer",
+            borderRadius: "4px",
+            marginBottom: "4px",
+            boxShadow: "0 1px 3px rgba(0,0,0,0.2)",
+            transition: "transform 0.2s ease",
           }}
-        ></button>
-        <button
-          onClick={() => changeLanguage("en")}
-          aria-label="Switch to English"
+          onMouseEnter={(e) => {
+            e.currentTarget.style.transform = "scale(1.05)";
+          }}
+          onMouseLeave={(e) => {
+            e.currentTarget.style.transform = "scale(1)";
+          }}
+        ></div>
+        <span
           style={{
-            margin: "10px",
-            padding: "10px",
+            fontSize: "11px",
+            color: language === "gr" ? "#1976d2" : "#666",
+            fontWeight: language === "gr" ? "600" : "500",
+            letterSpacing: "0.5px",
+          }}
+        >
+          ΕΛ
+        </span>
+      </div>
+
+      {/* English Language Button */}
+      <div
+        style={{
+          display: "flex",
+          flexDirection: "column",
+          alignItems: "center",
+          cursor: "pointer",
+          padding: "6px",
+          borderRadius: "8px",
+          backgroundColor: language === "en" ? "#e3f2fd" : "transparent",
+          transition: "all 0.3s ease",
+          border:
+            language === "en" ? "2px solid #1976d2" : "2px solid transparent",
+        }}
+        onClick={() => changeLanguage("en")}
+      >
+        <div
+          style={{
             backgroundImage: `url(${englishFlag})`,
             backgroundSize: "cover",
-            width: "50px", // Adjust width for visibility
-            height: "30px", // Adjust height for visibility
+            width: "32px",
+            height: "22px",
             backgroundPosition: "center",
-            border: "none",
-            cursor: "pointer",
+            borderRadius: "4px",
+            marginBottom: "4px",
+            boxShadow: "0 1px 3px rgba(0,0,0,0.2)",
+            transition: "transform 0.2s ease",
           }}
-        ></button>
+          onMouseEnter={(e) => {
+            e.currentTarget.style.transform = "scale(1.05)";
+          }}
+          onMouseLeave={(e) => {
+            e.currentTarget.style.transform = "scale(1)";
+          }}
+        ></div>
+        <span
+          style={{
+            fontSize: "11px",
+            color: language === "en" ? "#1976d2" : "#666",
+            fontWeight: language === "en" ? "600" : "500",
+            letterSpacing: "0.5px",
+          }}
+        >
+          EN
+        </span>
       </div>
     </div>
   );

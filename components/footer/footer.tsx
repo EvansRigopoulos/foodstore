@@ -27,8 +27,8 @@ const FooterWithMap: React.FC = () => {
           </p>
           <p>
             {language === "en"
-              ? "Email: info@restaurant.com"
-              : "Email: info@restaurant.com"}
+              ? "Email: kotopoulatodiamanti@gmail.com"
+              : "Email: kotopoulatodiamanti@gmail.com"}
           </p>
         </div>
 
