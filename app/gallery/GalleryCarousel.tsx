@@ -50,16 +50,24 @@ const GalleryCarousel: React.FC<{ items: GalleryItem[] }> = ({ items }) => {
   return (
     <div
       className={styles.carousel}
+      role="region"
+      aria-label={`${title[language]} gallery`}
       onMouseEnter={handleMouseEnter}
       onMouseLeave={handleMouseLeave}
     >
-      <h2>{title[language]}</h2>
+      <h2 id="gallery-title">{title[language]}</h2>
 
-      <button className={styles.prevButton} onClick={prevItem}>
+      <button
+        className={styles.prevButton}
+        onClick={prevItem}
+        aria-label="Previous image"
+        aria-controls="gallery-image"
+      >
         &#10094;
       </button>
       <div className={styles.imageContainer}>
         <Image
+          id="gallery-image"
           src={items[currentIndex].src}
           alt={items[currentIndex].alt}
           width={1900}
@@ -68,11 +76,20 @@ const GalleryCarousel: React.FC<{ items: GalleryItem[] }> = ({ items }) => {
           onError={(e) => {
             console.error(`Failed to load image: ${items[currentIndex].src}`);
           }}
+          role="img"
+          aria-describedby="image-counter"
         />
+        {/* Image counter for screen readers */}
+        <div id="image-counter" className="sr-only">
+          Image {currentIndex + 1} of {items.length}
+        </div>
         {/* Auto-scroll indicator */}
-        <div
+        <button
           className={styles.autoScrollIndicator}
           onClick={() => setIsAutoScrolling(!isAutoScrolling)}
+          aria-label={
+            isAutoScrolling ? "Pause auto-scroll" : "Resume auto-scroll"
+          }
           title={
             isAutoScrolling
               ? "Click to pause auto-scroll"
@@ -80,9 +97,14 @@ const GalleryCarousel: React.FC<{ items: GalleryItem[] }> = ({ items }) => {
           }
         >
           {isAutoScrolling ? "⏸️" : "▶️"}
-        </div>
+        </button>
       </div>
-      <button className={styles.nextButton} onClick={nextItem}>
+      <button
+        className={styles.nextButton}
+        onClick={nextItem}
+        aria-label="Next image"
+        aria-controls="gallery-image"
+      >
         &#10095;
       </button>
     </div>

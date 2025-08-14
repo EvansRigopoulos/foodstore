@@ -57,16 +57,26 @@ const FooterWithMap: React.FC = () => {
               target="_blank"
               rel="noopener noreferrer"
               className={styles.icon}
+              aria-label={
+                language === "en"
+                  ? "Visit our Facebook page (opens in new tab)"
+                  : "Επισκεφτείτε τη σελίδα μας στο Facebook (ανοίγει σε νέα καρτέλα)"
+              }
             >
-              <FaFacebook size={30} />
+              <FaFacebook size={30} aria-hidden="true" />
             </a>
             <a
               href="https://www.instagram.com/kotopoulatodiamanti/"
               target="_blank"
               rel="noopener noreferrer"
               className={styles.icon}
+              aria-label={
+                language === "en"
+                  ? "Visit our Instagram page (opens in new tab)"
+                  : "Επισκεφτείτε τη σελίδα μας στο Instagram (ανοίγει σε νέα καρτέλα)"
+              }
             >
-              <FaInstagram size={30} />
+              <FaInstagram size={30} aria-hidden="true" />
             </a>
           </div>
         </div>

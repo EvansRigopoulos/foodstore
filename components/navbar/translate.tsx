@@ -18,6 +18,8 @@ const Translate: React.FC = () => {
 
   return (
     <div
+      role="group"
+      aria-label="Language selection"
       style={{
         display: "flex",
         alignItems: "center",
@@ -29,7 +31,12 @@ const Translate: React.FC = () => {
       }}
     >
       {/* Greek Language Button */}
-      <div
+      <button
+        role="button"
+        aria-label={`Switch to Greek language${
+          language === "gr" ? " (currently selected)" : ""
+        }`}
+        aria-pressed={language === "gr"}
         style={{
           display: "flex",
           flexDirection: "column",
@@ -43,6 +50,12 @@ const Translate: React.FC = () => {
             language === "gr" ? "2px solid #1976d2" : "2px solid transparent",
         }}
         onClick={() => changeLanguage("gr")}
+        onKeyDown={(e) => {
+          if (e.key === "Enter" || e.key === " ") {
+            e.preventDefault();
+            changeLanguage("gr");
+          }
+        }}
       >
         <div
           style={{
@@ -66,17 +79,22 @@ const Translate: React.FC = () => {
         <span
           style={{
             fontSize: "11px",
-            color: language === "gr" ? "#1976d2" : "#666",
+            color: language === "gr" ? "#1976d2" : "#333",
             fontWeight: language === "gr" ? "600" : "500",
             letterSpacing: "0.5px",
           }}
         >
           ΕΛ
         </span>
-      </div>
+      </button>
 
       {/* English Language Button */}
-      <div
+      <button
+        role="button"
+        aria-label={`Switch to English language${
+          language === "en" ? " (currently selected)" : ""
+        }`}
+        aria-pressed={language === "en"}
         style={{
           display: "flex",
           flexDirection: "column",
@@ -90,6 +108,12 @@ const Translate: React.FC = () => {
             language === "en" ? "2px solid #1976d2" : "2px solid transparent",
         }}
         onClick={() => changeLanguage("en")}
+        onKeyDown={(e) => {
+          if (e.key === "Enter" || e.key === " ") {
+            e.preventDefault();
+            changeLanguage("en");
+          }
+        }}
       >
         <div
           style={{
@@ -113,14 +137,14 @@ const Translate: React.FC = () => {
         <span
           style={{
             fontSize: "11px",
-            color: language === "en" ? "#1976d2" : "#666",
+            color: language === "en" ? "#1976d2" : "#333",
             fontWeight: language === "en" ? "600" : "500",
             letterSpacing: "0.5px",
           }}
         >
           EN
         </span>
-      </div>
+      </button>
     </div>
   );
 };
