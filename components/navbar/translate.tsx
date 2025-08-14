@@ -25,9 +25,10 @@ const Translate: React.FC = () => {
         alignItems: "center",
         gap: "12px",
         padding: "8px",
-        backgroundColor: "#f8f9fa",
+        backgroundColor: "#ffffff",
         borderRadius: "12px",
         boxShadow: "0 2px 8px rgba(0,0,0,0.1)",
+        border: "1px solid #e0e0e0",
       }}
     >
       {/* Greek Language Button */}
@@ -44,10 +45,9 @@ const Translate: React.FC = () => {
           cursor: "pointer",
           padding: "6px",
           borderRadius: "8px",
-          backgroundColor: language === "gr" ? "#e3f2fd" : "transparent",
+          backgroundColor: language === "gr" ? "#1976d2" : "#f5f5f5",
           transition: "all 0.3s ease",
-          border:
-            language === "gr" ? "2px solid #1976d2" : "2px solid transparent",
+          border: "2px solid transparent",
         }}
         onClick={() => changeLanguage("gr")}
         onKeyDown={(e) => {
@@ -79,7 +79,7 @@ const Translate: React.FC = () => {
         <span
           style={{
             fontSize: "11px",
-            color: language === "gr" ? "#1976d2" : "#333",
+            color: language === "gr" ? "#ffffff" : "#333",
             fontWeight: language === "gr" ? "600" : "500",
             letterSpacing: "0.5px",
           }}
@@ -102,10 +102,9 @@ const Translate: React.FC = () => {
           cursor: "pointer",
           padding: "6px",
           borderRadius: "8px",
-          backgroundColor: language === "en" ? "#e3f2fd" : "transparent",
+          backgroundColor: language === "en" ? "#1976d2" : "#f5f5f5",
           transition: "all 0.3s ease",
-          border:
-            language === "en" ? "2px solid #1976d2" : "2px solid transparent",
+          border: "2px solid transparent",
         }}
         onClick={() => changeLanguage("en")}
         onKeyDown={(e) => {
@@ -137,7 +136,7 @@ const Translate: React.FC = () => {
         <span
           style={{
             fontSize: "11px",
-            color: language === "en" ? "#1976d2" : "#333",
+            color: language === "en" ? "#ffffff" : "#333",
             fontWeight: language === "en" ? "600" : "500",
             letterSpacing: "0.5px",
           }}
