@@ -1,0 +1,23 @@
+.smokeContainer {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+  pointer-events: none;
+  z-index: 0;
+}
+
+.smokeCanvas {
+  width: 100vw;
+  height: 100vh;
+  display: block;
+}
+
+/* Reduce opacity significantly on mobile devices */
+@media (max-width: 768px) {
+  .smokeContainer {
+    opacity: 0.4;
+  }
+}

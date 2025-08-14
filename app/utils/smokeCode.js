@@ -37,10 +37,12 @@
   var smokeSpriteSize = 20;
 
   var polyfillAnimFrame =
-    window.requestAnimationFrame ||
-    window.mozRequestAnimationFrame ||
-    window.webkitRequestAnimationFrame ||
-    window.msRequestAnimationFrame;
+    typeof window !== "undefined"
+      ? window.requestAnimationFrame ||
+        window.mozRequestAnimationFrame ||
+        window.webkitRequestAnimationFrame ||
+        window.msRequestAnimationFrame
+      : null;
 
   function floatInRange(start, end) {
     return start + Math.random() * (end - start);

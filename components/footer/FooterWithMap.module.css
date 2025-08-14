@@ -3,6 +3,7 @@
   color: #fff;
   padding: 40px 20px;
   text-align: center;
+  margin-top: 100px;
 }
 
 .container {
@@ -34,9 +35,47 @@
 
 .socialMedia {
   flex: 1;
-  padding: 10px;
   min-width: 250px;
+  text-align: left;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.socialMedia h2 {
+  margin-bottom: 15px;
   text-align: center;
+}
+
+/* Mobile view: align everything to the left */
+@media (max-width: 768px) {
+  .socialMedia {
+    align-items: flex-start;
+  }
+
+  .socialMedia h2 {
+    text-align: left;
+  }
+
+  .iconContainer {
+    justify-content: flex-start;
+  }
+}
+
+.iconContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+
+.socialMedia a {
+  display: flex;
+  align-items: center;
+  padding-bottom: 20px;
+  color: #fff;
+  text-decoration: none;
+  transition: color 0.3s ease;
 }
 
 .icon {

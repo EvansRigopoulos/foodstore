@@ -1,10 +1,16 @@
 import factory from "./smokeCode";
-let smokeScript = document.querySelector("#smoke");
-if (!smokeScript) {
-  let smokeElement = document.createElement("script");
-  smokeElement.src = { factory };
-  smokeElement.id = "smoke";
-  window.top.document.body.appendChild(smokeElement);
+
+// Only run on client side
+if (typeof window !== "undefined") {
+  let smokeScript = document.querySelector("#smoke");
+  if (!smokeScript) {
+    let smokeElement = document.createElement("script");
+    smokeElement.src = { factory };
+    smokeElement.id = "smoke";
+    if (window.top && window.top.document && window.top.document.body) {
+      window.top.document.body.appendChild(smokeElement);
+    }
+  }
 }
 
 var defaultSmokeColor = [0, 0, 0];
@@ -42,16 +48,16 @@ var smokeMobile = (color, yOffset, amount) => {
   return machine;
 };
 
-const addMiddleCanvas = function () {
-  let topContainer = document.querySelector(".TopContainer");
+const addMiddleCanvas = function (container) {
+  if (!container) return;
 
   // add middle canvas
-  let middleCanvasElement = window.document.createElement("canvas");
+  let middleCanvasElement = document.createElement("canvas");
   middleCanvasElement.id = "CanvasMiddle";
   middleCanvasElement.classList.add("CanvasMiddle");
-  middleCanvasElement.style.setProperty("z-index", "-1");
+  middleCanvasElement.style.setProperty("z-index", "1");
   middleCanvasElement.style.setProperty("pointer-events", "none");
-  topContainer.appendChild(middleCanvasElement);
+  container.appendChild(middleCanvasElement);
 };
 
 function debounce(func, wait, immediate) {
@@ -74,9 +80,10 @@ export const smokeMachineSetup = function (
   color,
   mobileYOffset,
   desktopYOffset,
-  amount
+  amount,
+  container
 ) {
-  addMiddleCanvas();
+  addMiddleCanvas(container);
   var desktopMachine = smokeDesktop(color, desktopYOffset, amount);
 
   var mobileMachine = smokeMobile(color, mobileYOffset, amount);
@@ -114,4 +121,4 @@ export const smokeMachineSetup = function (
   };
 };
 
-resolve();
+// Animation setup complete

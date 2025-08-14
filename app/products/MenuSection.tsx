@@ -42,7 +42,7 @@ const MenuSection: React.FC = () => {
         ))}
       </div>
       <button className={styles.turnPageButton} onClick={handlePageTurn}>
-        Turn Page
+        {language === "en" ? "Turn Page" : "Επόμενη Σελίδα"}
       </button>
     </section>
   );

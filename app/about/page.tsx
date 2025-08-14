@@ -5,6 +5,7 @@ import { useLanguage } from "../context/LanguageContext";
 import outside from "../outside.jpg";
 import Image from "next/image";
 import styles from "./AboutUs.module.css";
+import SmokeAnimation from "../components/SmokeAnimation";
 
 function AboutPage() {
   const { language } = useLanguage();
@@ -23,15 +24,21 @@ function AboutPage() {
   };
 
   return (
-    <section className={styles.aboutSection} aria-labelledby="about-us-title">
-      <span id="about-us-title">{content[language].title}</span>
-      <span className={styles.content}>{content[language].text}</span>
-      <Image
-        src={outside}
-        alt="A beautiful restaurant"
-        className={styles.image}
-      />
-    </section>
+    <>
+      <SmokeAnimation />
+      <section className={styles.aboutSection} aria-labelledby="about-us-title">
+        <span id="about-us-title">{content[language].title}</span>
+        <span className={styles.content}>{content[language].text}</span>
+        <Image
+          src={"https://i.postimg.cc/44bRwS9G/new-front.jpg"}
+          alt="A beautiful restaurant"
+          width={2400}
+          height={1600}
+          className={styles.image}
+          priority
+        />
+      </section>
+    </>
   );
 }
 

@@ -7,7 +7,7 @@
 }
 
 .galleryContainer {
-  width: auto;
+  width: 100%;
   margin-top: 100px;
   display: flex;
   align-items: center;
@@ -20,19 +20,20 @@
   flex-direction: column;
   position: relative;
   width: 100%;
-  margin: 0 auto;
+  height: 100%;
   overflow: hidden;
   border-radius: 10px;
   background: #fff; /* Background for the carousel */
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.15); /* Subtle shadow */
-  gap: 10px;
+  gap: 25px;
 }
 
 .carousel img,
 .carousel video {
   max-width: 100%;
-  max-height: 400px; /* Set a fixed height for images/videos */
+  max-height: 1000px; /* Set a fixed height for images/videos */
   border-radius: 10px; /* Rounded corners for media */
+  padding-bottom: 50px;
 }
 
 .prevButton,
@@ -63,8 +64,9 @@
 }
 .media {
   max-width: 100%;
-  max-height: 400px;
+  max-height: 1000px;
   border-radius: 10px;
+  object-fit: cover;
 }
 
 .gallery {
@@ -136,4 +138,23 @@
   background: rgba(255, 255, 255, 0.05);
   animation: rise 10s ease-in-out infinite, drift 6s ease-in-out infinite;
   filter: blur(15px);
+}
+
+/* Auto-scroll indicator */
+.autoScrollIndicator {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  background: rgba(0, 0, 0, 0.7);
+  color: white;
+  padding: 5px 8px;
+  border-radius: 5px;
+  font-size: 14px;
+  z-index: 10;
+  cursor: pointer;
+  transition: opacity 0.3s ease;
+}
+
+.autoScrollIndicator:hover {
+  opacity: 0.8;
 }

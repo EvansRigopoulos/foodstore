@@ -5,7 +5,13 @@ import Image from "next/image";
 export default function Logo() {
   return (
     <div>
-      <Image src={favicon} alt="To Diamanti" className="sm:w-20" />
+      <Image
+        src="https://i.postimg.cc/VL8Lktjf/logo.jpg"
+        alt="To Diamanti"
+        width={100}
+        height={100}
+        className="sm:w-20"
+      />
     </div>
   );
 }

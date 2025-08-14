@@ -1,3 +1,4 @@
+"use client";
 import React from "react";
 import styles from "./FooterWithMap.module.css"; // Import the CSS module
 import { FaFacebook, FaInstagram, FaTwitter } from "react-icons/fa";
@@ -13,17 +14,16 @@ const FooterWithMap: React.FC = () => {
         <div className={styles.contactInfo}>
           <h2>
             {language === "en" ? "Contact Us" : "Επικοινωνήστε μαζί μας"}{" "}
-            {/* Conditionally render */}
           </h2>
           <p>
             {language === "en"
-              ? "Address: 1234 Restaurant St, City, Country"
-              : "Διεύθυνση: Οδός Εστιατορίου 1234, Πόλη, Χώρα"}
+              ? "Address: Gounari 2, Elliniko"
+              : "Διεύθυνση: Γούναρη 2, Ελληνικό"}
           </p>
           <p>
             {language === "en"
-              ? "Phone: +123 456 7890"
-              : "Τηλέφωνο: +123 456 7890"}
+              ? "Phone: +30 210 9635560"
+              : "Τηλέφωνο: +30 210 9635560"}
           </p>
           <p>
             {language === "en"
@@ -32,7 +32,6 @@ const FooterWithMap: React.FC = () => {
           </p>
         </div>
 
-        {/* Google Map Embed */}
         <div className={styles.mapContainer}>
           <h2>{language === "en" ? "Find Us Here" : "Βρείτε μας εδώ"}</h2>
           <iframe
@@ -50,33 +49,26 @@ const FooterWithMap: React.FC = () => {
           ></iframe>
         </div>
 
-        {/* Social Media Links */}
         <div className={styles.socialMedia}>
           <h2>{language === "en" ? "Follow Us" : "Ακολουθήστε μας"}</h2>
-          <a
-            href="https://www.facebook.com/yourpage"
-            target="_blank"
-            rel="noopener noreferrer"
-            className={styles.icon}
-          >
-            <FaFacebook size={30} />
-          </a>
-          <a
-            href="https://www.instagram.com/yourpage"
-            target="_blank"
-            rel="noopener noreferrer"
-            className={styles.icon}
-          >
-            <FaInstagram size={30} />
-          </a>
-          <a
-            href="https://www.twitter.com/yourpage"
-            target="_blank"
-            rel="noopener noreferrer"
-            className={styles.icon}
-          >
-            <FaTwitter size={30} />
-          </a>
+          <div className={styles.iconContainer}>
+            <a
+              href="https://www.facebook.com/KotopoulaToDiamanti/?locale=el_GR"
+              target="_blank"
+              rel="noopener noreferrer"
+              className={styles.icon}
+            >
+              <FaFacebook size={30} />
+            </a>
+            <a
+              href="https://www.instagram.com/kotopoulatodiamanti/"
+              target="_blank"
+              rel="noopener noreferrer"
+              className={styles.icon}
+            >
+              <FaInstagram size={30} />
+            </a>
+          </div>
         </div>
       </div>
     </footer>

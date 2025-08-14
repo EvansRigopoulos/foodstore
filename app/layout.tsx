@@ -22,11 +22,11 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en">
+    <html lang="en" suppressHydrationWarning={true}>
       <body className={inter.className}>
         <LanguageProvider>
           <Navbar />
-          <Container className="py-20s">
+          <Container className="py-20">
             <Home />
           </Container>
           <FooterWithMap />
