@@ -13,6 +13,22 @@
   align-items: center;
 }
 
+/* Mobile spacing reduction */
+@media (max-width: 768px) {
+  .galleryContainer {
+    margin-top: 30px;
+    margin-bottom: 30px;
+  }
+
+  .gallery {
+    padding: 20px 15px;
+  }
+
+  .carousel {
+    gap: 15px;
+  }
+}
+
 .carousel {
   display: flex;
   align-items: center;

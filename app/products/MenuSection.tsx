@@ -1,6 +1,7 @@
 "use client";
 
 import React, { useState } from "react";
+import { FaArrowRight, FaDownload } from "react-icons/fa";
 
 import styles from "./MenuSection.module.css"; // Import your CSS module
 import { useLanguage } from "../context/LanguageContext";
@@ -43,6 +44,7 @@ const MenuSection: React.FC = () => {
       </div>
       <div className={styles.buttonContainer}>
         <button className={styles.turnPageButton} onClick={handlePageTurn}>
+          <FaArrowRight size={12} />
           {language === "en" ? "Turn Page" : "Επόμενη Σελίδα"}
         </button>
         <a
@@ -50,7 +52,8 @@ const MenuSection: React.FC = () => {
           download="Diamanti-Restaurant-Menu.pdf"
           className={styles.downloadButton}
         >
-          {language === "en" ? "📄 Download Menu" : "📄 Κατεβάστε το Μενού"}
+          <FaDownload size={12} />
+          {language === "en" ? "Download Menu" : "Κατεβάστε το Μενού"}
         </a>
       </div>
     </section>

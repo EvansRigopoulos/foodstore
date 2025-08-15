@@ -4,28 +4,41 @@
   padding: 40px 20px;
   text-align: center;
   margin-top: 100px;
+  position: relative;
+  z-index: 10;
 }
 
 .container {
   display: flex;
+  flex-direction: row;
   justify-content: space-between;
+  align-items: flex-start;
   flex-wrap: wrap;
-  max-width: 1200px;
+  max-width: 1600px;
   margin: 0 auto;
+  gap: 20px;
 }
 
 .contactInfo {
-  flex: 1;
-  padding: 10px;
+  flex: 1.2;
+  padding: 15px;
   min-width: 250px;
+  max-width: 350px;
   text-align: left;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
 }
 
 .mapContainer {
-  flex: 1;
-  padding: 10px;
-  min-width: 250px;
+  flex: 1.3;
+  padding: 15px;
+  min-width: 280px;
+  max-width: 380px;
   text-align: left;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
 }
 
 .iframe {
@@ -35,11 +48,13 @@
 
 .socialMedia {
   flex: 1;
-  min-width: 250px;
+  padding: 15px;
+  min-width: 160px;
+  max-width: 220px;
   text-align: left;
   display: flex;
   flex-direction: column;
-  align-items: center;
+  align-items: flex-start;
 }
 
 .socialMedia h2 {
@@ -62,29 +77,426 @@
   }
 }
 
+/* Opening Hours Section */
+.openingHours {
+  flex: 1;
+  padding: 15px;
+  min-width: 180px;
+  max-width: 250px;
+  text-align: left;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.openingHours h2 {
+  margin-bottom: 15px;
+  text-align: left;
+  color: #fff;
+}
+
+.hoursContainer {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  width: 100%;
+}
+
+.hoursContainer p {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0;
+  padding: 6px 0;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.hoursContainer p:last-child {
+  border-bottom: none;
+  padding-bottom: 6px;
+}
+
+.day {
+  font-weight: 600;
+  color: #fff;
+  font-size: 14px;
+  min-width: 100px;
+}
+
+.hours {
+  color: #ccc;
+  font-size: 14px;
+  text-align: right;
+  min-width: 90px;
+  font-family: monospace;
+}
+
+/* Highlight closed day */
+.hoursContainer p:first-child .hours {
+  color: #e74c3c;
+  font-weight: 600;
+}
+
+/* Desktop Styles for Missing Elements */
+.contactInfo h2,
+.mapContainer h2,
+.socialMedia h2,
+.openingHours h2,
+.paymentMethods h2 {
+  color: #fff;
+  margin-bottom: 15px;
+}
+
+.contactInfo p,
+.mapContainer p {
+  color: #fff;
+  margin: 5px 0;
+}
+
 .iconContainer {
   display: flex;
   justify-content: center;
   align-items: center;
   gap: 20px;
-}
-
-.socialMedia a {
-  display: flex;
-  align-items: center;
-  padding-bottom: 20px;
-  color: #fff;
-  text-decoration: none;
-  transition: color 0.3s ease;
+  margin-top: 10px;
 }
 
 .icon {
-  margin: 0 10px;
   color: #fff;
   text-decoration: none;
   transition: color 0.3s ease;
 }
 
 .icon:hover {
-  color: #0d6efd; /* Change color on hover */
+  color: #0d6efd;
+}
+
+/* Payment Methods Section */
+.paymentMethods {
+  flex: 1;
+  padding: 15px;
+  min-width: 160px;
+  max-width: 220px;
+  text-align: left;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.paymentMethods h2 {
+  margin-bottom: 15px;
+  text-align: left;
+  color: #fff;
+}
+
+.paymentContainer {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  width: 100%;
+}
+
+.paymentMethod {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 8px 0;
+}
+
+.paymentIcon {
+  color: #66bb6a;
+  flex-shrink: 0;
+}
+
+.paymentMethod span {
+  font-size: 14px;
+  color: #fff;
+  font-weight: 500;
+}
+
+/* Copyright Section */
+.copyright {
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.05);
+  padding: 20px 0;
+  margin-top: 30px;
+  border-top: 1px solid rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+.copyright p {
+  margin: 0;
+  font-size: 14px;
+  color: #fff;
+  font-weight: 400;
+}
+
+/* Mobile Menu Styles - Always Expanded */
+.mobileMenu {
+  display: none;
+  background-color: #333;
+}
+
+.menuSections {
+  padding: 0;
+}
+
+.menuSection {
+  border-bottom: 1px solid #444;
+}
+
+.sectionButton {
+  width: 100%;
+  padding: 15px 20px;
+  background: none;
+  border: none;
+  color: #fff;
+  text-align: left;
+  cursor: pointer;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 16px;
+  font-weight: 500;
+  transition: background-color 0.3s ease;
+}
+
+.sectionButton:hover {
+  background-color: #444;
+}
+
+.arrow {
+  font-size: 18px;
+  font-weight: bold;
+  transition: transform 0.3s ease;
+}
+
+.sectionContent {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.3s ease;
+  background-color: #2a2a2a;
+}
+
+.sectionContent.active {
+  max-height: 500px;
+  padding: 15px 20px;
+}
+
+.sectionContent h4 {
+  color: #fff;
+  margin: 10px 0 5px 0;
+  font-size: 14px;
+  align-self: flex-start;
+  text-align: left;
+}
+
+.sectionContent p {
+  color: #ccc;
+  margin: 5px 0;
+  font-size: 14px;
+  align-self: flex-start;
+  text-align: left;
+}
+
+.sectionContent .iconContainer {
+  display: flex;
+  gap: 15px;
+  margin-top: 10px;
+}
+
+.sectionContent .paymentContainer {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-top: 10px;
+}
+
+.sectionContent .paymentMethod {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.sectionContent .hoursContainer p {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  padding: 6px 0;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.sectionContent .hoursContainer p:last-child {
+  border-bottom: none;
+}
+
+.sectionContent .day {
+  font-weight: 600;
+  color: #fff;
+  font-size: 14px;
+  min-width: 100px;
+  text-align: left;
+}
+
+.sectionContent .hours {
+  color: #ccc;
+  font-size: 14px;
+  text-align: right;
+  min-width: 90px;
+  font-family: monospace;
+}
+
+/* Mobile responsiveness */
+@media (max-width: 768px) {
+  /* Reduce all gaps and spacing on mobile */
+  .footer {
+    margin-top: 20px;
+    padding: 20px 10px;
+  }
+
+  /* Show mobile menu, hide desktop layout */
+  .mobileMenu {
+    display: block;
+  }
+
+  .container {
+    display: none;
+  }
+
+  /* Reduce mobile menu spacing */
+  .sectionButton {
+    padding: 12px 15px;
+  }
+
+  .sectionContent.active {
+    padding: 10px 15px;
+  }
+
+  .sectionContent h4 {
+    margin: 5px 0 3px 0;
+    font-size: 13px;
+  }
+
+  .sectionContent p {
+    margin: 3px 0;
+    font-size: 13px;
+  }
+
+  .sectionContent .hoursContainer p {
+    padding: 4px 0;
+  }
+
+  .sectionContent .paymentContainer {
+    gap: 8px;
+    margin-top: 5px;
+  }
+
+  .sectionContent .iconContainer {
+    gap: 12px;
+    margin-top: 8px;
+  }
+
+  /* Keep copyright visible on mobile */
+  .copyright {
+    display: block !important;
+    padding: 10px 5px;
+    margin-top: 15px;
+  }
+
+  .copyright p {
+    font-size: 11px;
+    line-height: 1.3;
+  }
+
+  .contactInfo,
+  .mapContainer,
+  .socialMedia,
+  .openingHours,
+  .paymentMethods {
+    flex: none;
+    min-width: 100%;
+    max-width: 100%;
+    padding: 15px 0;
+    align-items: flex-start;
+  }
+
+  .socialMedia {
+    align-items: flex-start;
+  }
+
+  .socialMedia h2 {
+    text-align: left;
+  }
+
+  .iconContainer {
+    justify-content: flex-start;
+  }
+
+  .openingHours {
+    align-items: flex-start;
+    text-align: left;
+  }
+
+  .openingHours h2 {
+    text-align: left;
+  }
+
+  .hoursContainer p {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 2px;
+  }
+
+  .hoursContainer p:first-child {
+    display: block !important;
+  }
+
+  .hoursContainer p:first-child .day,
+  .hoursContainer p:first-child .hours {
+    display: block;
+    width: 100%;
+    text-align: left;
+  }
+
+  .day,
+  .hours {
+    font-size: 12px;
+  }
+
+  .paymentMethods {
+    align-items: flex-start;
+    text-align: left;
+    padding: 15px 0 !important;
+  }
+
+  .paymentMethods h2 {
+    text-align: left;
+    margin-left: 0;
+    padding-left: 0;
+  }
+
+  .paymentContainer {
+    margin-left: 0;
+    padding-left: 0;
+    width: 100%;
+  }
+
+  .paymentMethod {
+    gap: 10px;
+    margin-left: 0;
+    padding-left: 0;
+  }
+
+  .paymentMethod span {
+    font-size: 13px;
+  }
+
+  .copyright {
+    padding: 15px 10px;
+  }
+
+  .copyright p {
+    font-size: 12px;
+    line-height: 1.4;
+  }
 }

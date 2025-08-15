@@ -82,6 +82,61 @@
   border: 1px solid rgba(255, 255, 255, 0.2);
 }
 
+/* Enhanced button styling with orange colors */
+.turnPageButton {
+  background: linear-gradient(
+    135deg,
+    rgb(235, 135, 95) 0%,
+    rgb(205, 105, 65) 100%
+  ) !important;
+  box-shadow: 0 4px 15px rgba(235, 135, 95, 0.4) !important;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  color: #ffffff !important;
+}
+
+.turnPageButton:hover {
+  background: linear-gradient(
+    135deg,
+    rgb(205, 105, 65) 0%,
+    rgb(235, 135, 95) 100%
+  ) !important;
+  box-shadow: 0 6px 25px rgba(235, 135, 95, 0.6) !important;
+  color: #ffffff !important;
+}
+
+.downloadButton {
+  background: linear-gradient(
+    135deg,
+    rgb(235, 135, 95) 0%,
+    rgb(205, 105, 65) 100%
+  ) !important;
+  box-shadow: 0 4px 15px rgba(235, 135, 95, 0.4) !important;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  color: #ffffff !important;
+}
+
+.downloadButton:hover {
+  background: linear-gradient(
+    135deg,
+    rgb(205, 105, 65) 0%,
+    rgb(235, 135, 95) 100%
+  ) !important;
+  box-shadow: 0 6px 25px rgba(235, 135, 95, 0.6) !important;
+  color: #ffffff !important;
+}
+
+/* Mobile font size reduction only */
+@media (max-width: 768px) {
+  .turnPageButton,
+  .downloadButton {
+    font-size: 12px;
+  }
+}
+
 .turnPageButton {
   padding: 12px 20px;
   background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);

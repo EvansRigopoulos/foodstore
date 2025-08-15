@@ -2,7 +2,6 @@
 
 import React from "react";
 import { useLanguage } from "../context/LanguageContext";
-import outside from "../outside.jpg";
 import Image from "next/image";
 import styles from "./AboutUs.module.css";
 import SmokeAnimation from "../components/SmokeAnimation";
@@ -14,12 +13,12 @@ function AboutPage() {
     en: {
       title: "About Us",
       text: ` THE BEST CHICKEN DELICACY YOU MUST TRY!!! GOUNARI 2 IN ELLINIKO HOME
-        DELIVERY FROM 12:00 AM TO 11:30 PM`,
+        DELIVERY FROM 12:00 AM TO 11:00 PM`,
     },
     gr: {
       title: "Σχετικά με Εμάς",
       text: `      Η ΚΑΛΥΤΕΡΗ ΚΟΤΟΝΟΣΤΙΜΙΑ ΠΟΥ ΠΡΕΠΕΙ ΝΑ ΔΟΚΙΜΑΣΕΤΕ !!! ΓΟΥΝΑΡΗ 2 ΣΤΟ
-        ΕΛΛΗΝΙΚΟ ΠΑΡΑΔΟΣΗ ΚΑΤ ΟΙΚΟΝ ΑΠΟ 12.00π.μ. ΕΩΣ 11.30μ.μ.`,
+        ΕΛΛΗΝΙΚΟ ΠΑΡΑΔΟΣΗ ΚΑΤ ΟΙΚΟΝ ΑΠΟ 12.00π.μ. ΕΩΣ 11.00μ.μ.`,
     },
   };
 
