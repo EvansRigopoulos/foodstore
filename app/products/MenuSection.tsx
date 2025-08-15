@@ -28,14 +28,14 @@ const MenuSection: React.FC = () => {
   return (
     <section className={styles.menuSection} aria-labelledby="menu-title">
       <h2>{title[language]}</h2>
-      <h2 id="menu-title" className={styles.menuSectionTitle}>
+      <h3 id="menu-title" className={styles.menuSectionTitle}>
         {menuSections[language][currentPage].title}
-      </h2>
+      </h3>
       <div className={`${styles.page} ${turning ? styles.turning : ""}`}>
         {menuSections[language][currentPage].items.map((item, index) => (
           <div key={index} className={styles.menuCard}>
             <div className={styles.menuItemHeader}>
-              <h3 className={styles.menuItemName}>{item.name}</h3>
+              <h4 className={styles.menuItemName}>{item.name}</h4>
               <span className={styles.menuItemPrice}>{item.price}</span>
             </div>
             <p className={styles.menuItemDescription}>{item.description}</p>

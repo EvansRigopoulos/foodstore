@@ -26,7 +26,7 @@ function AboutPage() {
     <>
       <SmokeAnimation />
       <section className={styles.aboutSection} aria-labelledby="about-us-title">
-        <span id="about-us-title">{content[language].title}</span>
+        <h1 id="about-us-title">{content[language].title}</h1>
         <span className={styles.content}>{content[language].text}</span>
         <Image
           src={"https://i.postimg.cc/44bRwS9G/new-front.jpg"}

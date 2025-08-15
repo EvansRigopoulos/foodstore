@@ -250,15 +250,15 @@ const FooterWithMap: React.FC = () => {
       <div className={styles.container}>
         {/* Contact Info */}
         <div className={styles.contactInfo}>
-          <h2>
+          <h3>
             {language === "en" ? "Contact Us" : "Επικοινωνήστε μαζί μας"}{" "}
-          </h2>
+          </h3>
           <p>
             {language === "en"
               ? "Address: Dim. Gounari 2, Elliniko"
               : "Διεύθυνση: Δημητρίου Γούναρη 2, Ελληνικό"}
           </p>
-          <h3>{language === "en" ? "Phones:" : "Τηλέφωνα:"}</h3>
+          <h4>{language === "en" ? "Phones:" : "Τηλέφωνα:"}</h4>
           <p>+30 210 9635560</p>
           <p>+30 210 9635561</p>
           <p>+30 698 2314186</p>
@@ -270,7 +270,7 @@ const FooterWithMap: React.FC = () => {
         </div>
 
         <div className={styles.mapContainer}>
-          <h2>{language === "en" ? "Find Us Here" : "Βρείτε μας εδώ"}</h2>
+          <h3>{language === "en" ? "Find Us Here" : "Βρείτε μας εδώ"}</h3>
           <iframe
             title={
               language === "en"
@@ -287,7 +287,7 @@ const FooterWithMap: React.FC = () => {
         </div>
 
         <div className={styles.socialMedia}>
-          <h2>{language === "en" ? "Follow Us" : "Ακολουθήστε μας"}</h2>
+          <h3>{language === "en" ? "Follow Us" : "Ακολουθήστε μας"}</h3>
           <div className={styles.iconContainer}>
             <a
               href="https://www.facebook.com/KotopoulaToDiamanti/?locale=el_GR"
@@ -319,7 +319,7 @@ const FooterWithMap: React.FC = () => {
         </div>
 
         <div className={styles.openingHours}>
-          <h2>{language === "en" ? "Opening Hours" : "Ωράριο Λειτουργίας"}</h2>
+          <h3>{language === "en" ? "Opening Hours" : "Ωράριο Λειτουργίας"}</h3>
           <div className={styles.hoursContainer}>
             {language === "en" ? (
               <>
@@ -388,7 +388,7 @@ const FooterWithMap: React.FC = () => {
         </div>
 
         <div className={styles.paymentMethods}>
-          <h2>{language === "en" ? "Payment Methods" : "Μέθοδοι Πληρωμής"}</h2>
+          <h3>{language === "en" ? "Payment Methods" : "Μέθοδοι Πληρωμής"}</h3>
           <div className={styles.paymentContainer}>
             <div className={styles.paymentMethod}>
               <MdEuroSymbol size={28} className={styles.paymentIcon} />

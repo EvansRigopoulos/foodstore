@@ -142,9 +142,20 @@
 .mapContainer h2,
 .socialMedia h2,
 .openingHours h2,
-.paymentMethods h2 {
+.paymentMethods h2,
+.contactInfo h3,
+.mapContainer h3,
+.socialMedia h3,
+.openingHours h3,
+.paymentMethods h3 {
   color: #fff;
   margin-bottom: 15px;
+}
+
+.contactInfo h4 {
+  color: #fff;
+  margin-bottom: 10px;
+  font-size: 16px;
 }
 
 .contactInfo p,
