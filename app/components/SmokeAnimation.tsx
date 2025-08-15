@@ -21,7 +21,11 @@ const SmokeAnimation: React.FC = () => {
     canvas.width = window.innerWidth;
     canvas.height = window.innerHeight;
 
-    containerRef.current.appendChild(canvas);
+    const container = containerRef.current;
+    container.appendChild(canvas);
+
+    let smokeInterval: NodeJS.Timeout;
+    let party: any;
 
     // Initialize smoke using bijection/smoke.js
     const initSmoke = async () => {
@@ -34,7 +38,7 @@ const SmokeAnimation: React.FC = () => {
         if (!ctx) return;
 
         // Create smoke machine with lighter, more transparent color
-        const party = SmokeMachine(ctx, [200, 200, 200]);
+        party = SmokeMachine(ctx, [200, 200, 200]);
 
         // Start the smoke animation
         party.start();
@@ -52,24 +56,21 @@ const SmokeAnimation: React.FC = () => {
         addSmoke();
 
         // Add smoke periodically
-        const smokeInterval = setInterval(addSmoke, 200);
+        smokeInterval = setInterval(addSmoke, 200);
 
         // Handle resize
         const handleResize = () => {
-          canvas.width = window.innerWidth;
-          canvas.height = window.innerHeight;
+          if (canvas) {
+            canvas.width = window.innerWidth;
+            canvas.height = window.innerHeight;
+          }
         };
 
         window.addEventListener("resize", handleResize);
 
-        // Cleanup
+        // Return cleanup function
         return () => {
-          clearInterval(smokeInterval);
           window.removeEventListener("resize", handleResize);
-          party.stop();
-          if (containerRef.current && canvas) {
-            containerRef.current.removeChild(canvas);
-          }
         };
       } catch (error) {
         console.error("Failed to load smoke animation:", error);
@@ -77,6 +78,27 @@ const SmokeAnimation: React.FC = () => {
     };
 
     initSmoke();
+
+    // Cleanup function
+    return () => {
+      if (smokeInterval) {
+        clearInterval(smokeInterval);
+      }
+      if (party && typeof party.stop === "function") {
+        try {
+          party.stop();
+        } catch (e) {
+          console.warn("Error stopping smoke animation:", e);
+        }
+      }
+      if (container && canvas && container.contains(canvas)) {
+        try {
+          container.removeChild(canvas);
+        } catch (e) {
+          console.warn("Error removing canvas:", e);
+        }
+      }
+    };
   }, [isClient]);
 
   // Don't render anything until client-side

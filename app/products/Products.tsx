@@ -659,7 +659,7 @@ export const Products: LanguageMenuSections = {
       items: [
         {
           name: "Γιάτσα Τυρνάβου Λευκό-Ροζέ (Ημίξηρο) 1 lt",
-          description: "Τοπικό κρασί από τα Τύρναβα",
+          description: "Τοπικό κρασί από τον Τύρναβο",
           price: "4,00 €",
         },
         {
@@ -669,7 +669,7 @@ export const Products: LanguageMenuSections = {
         },
         {
           name: "Λευκό - Ροζέ - Κόκκινο (Ξηρό) 500 ml",
-          description: "Επιλογή κρασιών του σπιτιού",
+          description: "Επιλογή κρασιών",
           price: "2,40 €",
         },
       ],

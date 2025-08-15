@@ -361,13 +361,16 @@
 @media (max-width: 768px) {
   /* Reduce all gaps and spacing on mobile */
   .footer {
-    margin-top: 20px;
-    padding: 20px 10px;
+    margin: 20px auto 0 auto;
+    padding: 20px 15px;
+    max-width: 95%;
   }
 
   /* Show mobile menu, hide desktop layout */
   .mobileMenu {
     display: block;
+    margin: 0 auto;
+    max-width: 350px;
   }
 
   .container {
@@ -377,6 +380,7 @@
   /* Reduce mobile menu spacing */
   .sectionButton {
     padding: 12px 15px;
+    font-size: 0.9rem;
   }
 
   .sectionContent.active {
@@ -385,16 +389,21 @@
 
   .sectionContent h4 {
     margin: 5px 0 3px 0;
-    font-size: 13px;
+    font-size: 0.85rem;
+    align-self: flex-start;
+    text-align: left;
   }
 
   .sectionContent p {
     margin: 3px 0;
-    font-size: 13px;
+    font-size: 0.8rem;
+    align-self: flex-start;
+    text-align: left;
   }
 
   .sectionContent .hoursContainer p {
     padding: 4px 0;
+    font-size: 0.8rem;
   }
 
   .sectionContent .paymentContainer {
@@ -405,17 +414,20 @@
   .sectionContent .iconContainer {
     gap: 12px;
     margin-top: 8px;
+    justify-content: center;
   }
 
   /* Keep copyright visible on mobile */
   .copyright {
     display: block !important;
     padding: 10px 5px;
-    margin-top: 15px;
+    margin: 15px auto 0 auto;
+    max-width: 350px;
+    text-align: center;
   }
 
   .copyright p {
-    font-size: 11px;
+    font-size: 0.75rem;
     line-height: 1.3;
   }
 
