@@ -10,8 +10,14 @@
   flex-direction: column;
 }
 
-.title,
-h1 {
+.title {
+  font-size: 2rem;
+  margin-bottom: 20px;
+  color: #333; /* Dark text color */
+  text-align: center;
+}
+
+.pageTitle {
   font-size: 2rem;
   margin-bottom: 20px;
   color: #333; /* Dark text color */
