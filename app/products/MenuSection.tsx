@@ -1,7 +1,7 @@
 "use client";
 
 import React, { useState } from "react";
-import { FaArrowRight, FaDownload } from "react-icons/fa";
+import { FaArrowRight, FaArrowLeft } from "react-icons/fa";
 
 import styles from "./MenuSection.module.css"; // Import your CSS module
 import { useLanguage } from "../context/LanguageContext";
@@ -25,6 +25,19 @@ const MenuSection: React.FC = () => {
       setTurning(false);
     }, 600); // Duration of the page-turn animation
   };
+
+  const handlePreviousPage = () => {
+    if (turning) return;
+    setTurning(true);
+    setTimeout(() => {
+      setCurrentPage(
+        (prev) =>
+          (prev - 1 + menuSections[language].length) %
+          menuSections[language].length
+      );
+      setTurning(false);
+    }, 600); // Duration of the page-turn animation
+  };
   return (
     <section className={styles.menuSection} aria-labelledby="menu-title">
       <h2>{title[language]}</h2>
@@ -43,9 +56,18 @@ const MenuSection: React.FC = () => {
         ))}
       </div>
       <div className={styles.buttonContainer}>
+        {currentPage > 0 && (
+          <button
+            className={styles.turnPageButton}
+            onClick={handlePreviousPage}
+          >
+            <FaArrowLeft size={12} />
+            {language === "en" ? "Previous Page" : "Προηγούμενη Σελίδα"}
+          </button>
+        )}
         <button className={styles.turnPageButton} onClick={handlePageTurn}>
+          {language === "en" ? "Next Page" : "Επόμενη Σελίδα"}
           <FaArrowRight size={12} />
-          {language === "en" ? "Turn Page" : "Επόμενη Σελίδα"}
         </button>
       </div>
 
