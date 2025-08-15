@@ -256,17 +256,17 @@ export const Products: LanguageMenuSections = {
           price: "1,30 €",
         },
         {
-          name: "Cola (1lt)",
+          name: "Cola (1,5lt)",
           description: "Large Vikos cola",
           price: "2,80 €",
         },
         {
-          name: "Orange (1lt)",
+          name: "Orange (1,5lt)",
           description: "Large orange soda",
           price: "2,80 €",
         },
         {
-          name: "Orange without carbonation (1lt)",
+          name: "Orange without carbonation (1,5lt)",
           description: "Large still orange drink",
           price: "2,80 €",
         },
@@ -600,17 +600,17 @@ export const Products: LanguageMenuSections = {
           price: "1,30 €",
         },
         {
-          name: "Cola (1lt)",
+          name: "Cola (1,5lt)",
           description: "",
           price: "2,80 €",
         },
         {
-          name: "Πορτοκαλάδα (1lt)",
+          name: "Πορτοκαλάδα (1,5lt)",
           description: "",
           price: "2,80 €",
         },
         {
-          name: "Πορτοκαλάδα χωρίς ανθρακικό (1lt)",
+          name: "Πορτοκαλάδα χωρίς ανθρακικό (1,5lt)",
           description: "",
           price: "2,80 €",
         },
