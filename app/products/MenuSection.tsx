@@ -56,6 +56,20 @@ const MenuSection: React.FC = () => {
           {language === "en" ? "Download Menu" : "Κατεβάστε το Μενού"}
         </a>
       </div>
+
+      {/* Disclaimer section */}
+      <div className={styles.disclaimerSection}>
+        <p className={styles.disclaimerText}>
+          {language === "en"
+            ? "*Products are frozen"
+            : "*Προϊόντα είναι κατεψυγμένα"}
+        </p>
+        <p className={styles.disclaimerText}>
+          {language === "en"
+            ? "**Prices may change without notice"
+            : "**Οι τιμές μπορούν να αλλάξουν χωρίς προειδοποίηση"}
+        </p>
+      </div>
     </section>
   );
 };

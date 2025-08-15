@@ -22,32 +22,32 @@ export const Products: LanguageMenuSections = {
         {
           name: "Grilled Chicken/with lemon sauce",
           description: "Tender grilled chicken with lemon",
-          price: "10,20 €",
+          price: "10,60 €",
         },
         {
           name: "Rotisserie Chicken/with Lemon sauce",
           description: "Slow-roasted chicken with lemon",
-          price: "10,20 €",
+          price: "10,60 €",
         },
         {
           name: "Kontosouvli (traditional Greek slow roasted pork)",
           description: "Traditional Greek slow roasted pork",
-          price: "21,90 €",
+          price: "22,00 €",
         },
         {
           name: "Roasted Pork with bones and skin",
           description: "Traditional roasted pork",
-          price: "18,50 €",
+          price: "19,50 €",
         },
         {
           name: "Kokoretsi* (Traditional Greek lamb intestines and giblets)",
           description: "Traditional Greek delicacy",
-          price: "24,50 €",
+          price: "24,90 €",
         },
         {
           name: "Lamb Shoulder",
           description: "Tender lamb shoulder",
-          price: "24,50 €",
+          price: "25,50 €",
         },
         {
           name: "Lamb Head* (pcs)",
@@ -492,7 +492,7 @@ export const Products: LanguageMenuSections = {
         {
           name: "Το Διαμάντι",
           description: "Μαρούλι-Ρόκα-Ντοματίνια-Σως μέλι-μουστάρδα",
-          price: "5,00 €",
+          price: "5,50 €",
         },
       ],
     },
@@ -662,17 +662,17 @@ export const Products: LanguageMenuSections = {
         {
           name: "Γιάτσα Τυρνάβου Λευκό-Ροζέ (Ημίξηρο) 1 lt",
           description: "Τοπικό κρασί από τον Τύρναβο",
-          price: "4,00 €",
+          price: "4,50 €",
         },
         {
           name: "Ζίτσας Ιωαννίνων Λευκό-Ροζέ-Κόκκινο (Ξηρό) 1/2 lt",
           description: "Κρασί από την περιοχή Ιωαννίνων",
-          price: "5,00 €",
+          price: "5,50 €",
         },
         {
           name: "Λευκό - Ροζέ - Κόκκινο (Ξηρό) 500 ml",
           description: "Επιλογή κρασιών",
-          price: "2,40 €",
+          price: "2,00 €",
         },
       ],
     },
@@ -682,12 +682,12 @@ export const Products: LanguageMenuSections = {
         {
           name: "Βολταράκι Τσικουδιά 500 ml",
           description: "Παραδοσιακό κρητικό ποτό",
-          price: "6,00 €",
+          price: "6,50 €",
         },
         {
           name: "ZOINOS Τσίπουρο 200 ml",
           description: "Εκλεκτό ελληνικό τσίπουρο",
-          price: "5,00 €",
+          price: "5,50 €",
         },
       ],
     },

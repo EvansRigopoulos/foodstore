@@ -315,3 +315,32 @@
     font-size: 12px;
   }
 }
+
+/* Disclaimer section styles */
+.disclaimerSection {
+  margin-top: 30px;
+  padding: 15px 20px;
+  text-align: center;
+  border-top: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.disclaimerText {
+  font-size: 0.75rem;
+  color: #666;
+  margin: 3px 0;
+  line-height: 1.3;
+  font-style: italic;
+}
+
+/* Mobile disclaimer styles */
+@media (max-width: 768px) {
+  .disclaimerSection {
+    margin-top: 20px;
+    padding: 10px 15px;
+  }
+
+  .disclaimerText {
+    font-size: 0.7rem;
+    margin: 2px 0;
+  }
+}
