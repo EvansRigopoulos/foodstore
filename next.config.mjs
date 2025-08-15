@@ -75,11 +75,11 @@ const nextConfig = {
             key: "Content-Security-Policy",
             value: `
               default-src 'self';
-              script-src 'self' 'unsafe-eval' 'unsafe-inline' *.vercel.com *.vercel-insights.com;
+              script-src 'self' 'unsafe-eval' 'unsafe-inline' *.vercel.com *.vercel-insights.com *.googletagmanager.com *.google-analytics.com;
               style-src 'self' 'unsafe-inline' fonts.googleapis.com;
-              img-src 'self' data: blob: https: *.postimg.cc *.fbcdn.net *.amazonaws.com *.google.com *.facebook.com;
+              img-src 'self' data: blob: https: *.postimg.cc *.fbcdn.net *.amazonaws.com *.google.com *.facebook.com *.googletagmanager.com *.google-analytics.com;
               font-src 'self' fonts.gstatic.com;
-              connect-src 'self' *.vercel.com *.vercel-insights.com;
+              connect-src 'self' *.vercel.com *.vercel-insights.com *.google-analytics.com *.analytics.google.com *.googletagmanager.com;
               frame-src 'self' *.google.com;
             `
               .replace(/\s+/g, " ")
