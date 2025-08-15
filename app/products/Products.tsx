@@ -386,7 +386,7 @@ export const Products: LanguageMenuSections = {
         },
         {
           name: "Αρνί (Χεράκι)",
-          description: "Χερακι αρνίσιο τελικού βάρους ≈ 1,200kg",
+          description: "Χερακι αρνίσιο.Τελικό βάρος ≈ 1,200kg",
           price: "25,50 €",
         },
         {
