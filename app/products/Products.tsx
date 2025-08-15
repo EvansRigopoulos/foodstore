@@ -436,7 +436,7 @@ export const Products: LanguageMenuSections = {
         },
         {
           name: "Σως Γιαουρτιου",
-          description: "",
+          description: "Ελαφριά και δροσερή ... Γιαούρτι με μυρωδικά",
           price: "2,50 €",
         },
         {
@@ -446,7 +446,7 @@ export const Products: LanguageMenuSections = {
         },
         {
           name: "Ρώσικη",
-          description: "",
+          description: "Η διαχρονική...",
           price: "2,50 €",
         },
         {
@@ -466,12 +466,13 @@ export const Products: LanguageMenuSections = {
         },
         {
           name: "Κηπουρού",
-          description: "",
+          description:
+            "Ψιλοκομμένα λαχανικά με μαγιονέζα.Ταιριάζει με σαλάτε και με ψητά.",
           price: "2,50 €",
         },
         {
           name: "Βουδαπέστης",
-          description: "",
+          description: "Ψιλοκομμένο ζαμπόν με μαγιονέζα",
           price: "2,50 €",
         },
         {
