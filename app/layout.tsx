@@ -49,6 +49,13 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
               function gtag(){dataLayer.push(arguments);}
               gtag('js', new Date());
               gtag('config', 'G-4X9NWXF5PE');
+              
+              // Handle analytics blocking gracefully
+              window.addEventListener('error', function(e) {
+                if (e.filename && e.filename.includes('googletagmanager.com')) {
+                  console.log('Analytics blocked by ad blocker - this is normal and expected');
+                }
+              }, true);
             `,
           }}
         />

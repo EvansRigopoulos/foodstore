@@ -47,14 +47,6 @@ const MenuSection: React.FC = () => {
           <FaArrowRight size={12} />
           {language === "en" ? "Turn Page" : "Επόμενη Σελίδα"}
         </button>
-        <a
-          href="https://drive.google.com/uc?export=download&id=10HSQoOibMLDMnZQ_mx6AjIQTwE9UXRT9"
-          download="Diamanti-Restaurant-Menu.pdf"
-          className={styles.downloadButton}
-        >
-          <FaDownload size={12} />
-          {language === "en" ? "Download Menu" : "Κατεβάστε το Μενού"}
-        </a>
       </div>
 
       {/* Disclaimer section */}

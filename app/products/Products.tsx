@@ -85,8 +85,13 @@ export const Products: LanguageMenuSections = {
           price: "2,50 €",
         },
         {
-          name: "Mustard sauce/Yogurt sauce",
-          description: "Creamy mustard or yogurt sauce",
+          name: "Mustard sauce",
+          description: "Creamy mustard",
+          price: "2,50 €",
+        },
+        {
+          name: "Yogurt sauce",
+          description: "Υogurt sauce",
           price: "2,50 €",
         },
         {
@@ -425,28 +430,33 @@ export const Products: LanguageMenuSections = {
           price: "2,50 €",
         },
         {
-          name: "Σως Μουστάρδας / Σως Γιαουρτιού",
-          description: "Κρεμώδης σάλτσα μουστάρδας ή γιαουρτιού",
+          name: "Σως Μουστάρδας",
+          description: "Η κλασική... Μαγιονεζα-Μουστάρδα",
+          price: "2,50 €",
+        },
+        {
+          name: "Σως Γιαουρτιου",
+          description: "",
           price: "2,50 €",
         },
         {
           name: "Σως Cheddar / Σως Barbeque",
-          description: "Πλούσια σάλτσα cheddar ή BBQ",
+          description: "Οι γνωστές....",
           price: "2,50 €",
         },
         {
           name: "Ρώσικη",
-          description: "Παραδοσιακή ρώσικη σαλάτα",
+          description: "",
           price: "2,50 €",
         },
         {
           name: "Τυροσαλάτα",
-          description: "Πλούσια και κρεμώδης τυροσαλάτα",
+          description: "",
           price: "2,50 €",
         },
         {
           name: "Τυροκαυτερή",
-          description: "Πικάντικη τυροσαλάτα",
+          description: "Ελαφρώς πικάντικη",
           price: "2,50 €",
         },
         {
@@ -456,17 +466,17 @@ export const Products: LanguageMenuSections = {
         },
         {
           name: "Κηπουρού",
-          description: "Φρέσκα κομμένα λαχανικά με μαγιονέζα",
+          description: "",
           price: "2,50 €",
         },
         {
           name: "Βουδαπέστης",
-          description: "Κομμένα λαχανικά με μαγιονέζα και ζαμπόν",
+          description: "",
           price: "2,50 €",
         },
         {
           name: "Φέτα (200 gr)",
-          description: "Παραδοσιακή ελληνική φέτα",
+          description: "Φέτα Ηπείρου 200γρ",
           price: "3,50 €",
         },
         {
