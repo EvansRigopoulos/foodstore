@@ -38,9 +38,9 @@ export const metadata: Metadata = {
       "Κοτόπουλο σχάρας & σούβλας, κοντοσούβλι, κοκορέτσι, γουρουνοπούλα και παραδοσιακές σαλάτες. Delivery 12:00–23:00.",
     images: [
       {
-        url: "/gallery/grill.jpg",
-        width: 2560,
-        height: 1703,
+        url: "/og-front.jpg",
+        width: 1600,
+        height: 1064,
         alt: "Το Διαμάντι – ψητοπωλείο στο Ελληνικό",
       },
     ],
@@ -50,7 +50,7 @@ export const metadata: Metadata = {
     title: "Το Διαμάντι – Ψητοπωλείο στο Ελληνικό",
     description:
       "Κοτόπουλο σχάρας & σούβλας, κοντοσούβλι, κοκορέτσι και παραδοσιακές σαλάτες. Delivery 12:00–23:00.",
-    images: ["/gallery/grill.jpg"],
+    images: ["/og-front.jpg"],
   },
 };
 
