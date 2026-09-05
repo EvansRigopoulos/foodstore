@@ -51,6 +51,7 @@ const MenuSection: React.FC = () => {
               <h4 className={styles.menuItemName}>{item.name}</h4>
               <span className={styles.menuItemPrice}>{item.price}</span>
             </div>
+            <p className={styles.menuItemDescription}>{item.description}</p>
           </div>
         ))}
       </div>
