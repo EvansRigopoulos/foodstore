@@ -54,6 +54,49 @@ export const metadata: Metadata = {
   },
 };
 
+const restaurantJsonLd = {
+  "@context": "https://schema.org",
+  "@type": "Restaurant",
+  name: "Το Διαμάντι",
+  alternateName: "Diamanti Grill House",
+  description:
+    "Ψητοπωλείο στο Ελληνικό — κοτόπουλο σχάρας & σούβλας, κοντοσούβλι, κοκορέτσι, γουρουνοπούλα και παραδοσιακές σαλάτες.",
+  image: "https://www.kotopoulatodiamanti.gr/og-front.jpg",
+  logo: "https://www.kotopoulatodiamanti.gr/logo.jpg",
+  url: "https://www.kotopoulatodiamanti.gr",
+  sameAs: [
+    "https://www.facebook.com/KotopoulaToDiamanti/",
+    "https://www.instagram.com/kotopoulatodiamanti/",
+  ],
+  telephone: "+302109635560",
+  servesCuisine: ["Greek", "Grill", "Rotisserie"],
+  priceRange: "€€",
+  address: {
+    "@type": "PostalAddress",
+    streetAddress: "Δημητρίου Γούναρη 2",
+    addressLocality: "Ελληνικό",
+    addressRegion: "Αττική",
+    postalCode: "16777",
+    addressCountry: "GR",
+  },
+  openingHoursSpecification: [
+    {
+      "@type": "OpeningHoursSpecification",
+      dayOfWeek: [
+        "Monday",
+        "Tuesday",
+        "Wednesday",
+        "Thursday",
+        "Friday",
+        "Saturday",
+        "Sunday",
+      ],
+      opens: "12:00",
+      closes: "23:00",
+    },
+  ],
+};
+
 export default function RootLayout({
   children,
 }: Readonly<{
@@ -64,6 +107,13 @@ export default function RootLayout({
       <head>
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <meta name="theme-color" content="#1976d2" />
+        {/* Restaurant structured data (JSON-LD) for rich search results */}
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify(restaurantJsonLd),
+          }}
+        />
         {/* Google Tag Manager */}
         <script
           dangerouslySetInnerHTML={{

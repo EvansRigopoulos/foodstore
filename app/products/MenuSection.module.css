@@ -7,7 +7,7 @@
       rgba(255, 255, 255, 0.8),
       rgba(255, 255, 255, 0.8)
     ),
-    url("https://i.postimg.cc/zvPdJGFZ/new-logo.jpg") no-repeat center center;
+    url("/logo.jpg") no-repeat center center;
   background-size: contain;
   min-height: 500px;
   border-radius: 10px; /* Optional: rounded corners */
