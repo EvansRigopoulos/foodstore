@@ -72,6 +72,7 @@ const GalleryCarousel: React.FC<{ items: GalleryItem[] }> = ({ items }) => {
           alt={items[currentIndex].alt}
           width={1900}
           height={800}
+          unoptimized={items[currentIndex].src.toLowerCase().endsWith(".gif")}
           className={styles.media}
           onError={(e) => {
             console.error(`Failed to load image: ${items[currentIndex].src}`);
