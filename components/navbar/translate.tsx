@@ -6,10 +6,8 @@ import React from "react";
 const Translate: React.FC = () => {
   const { language, setLanguage } = useLanguage();
 
-  const greekFlag =
-    "https://upload.wikimedia.org/wikipedia/commons/5/5c/Flag_of_Greece.svg";
-  const englishFlag =
-    "https://upload.wikimedia.org/wikipedia/en/a/ae/Flag_of_the_United_Kingdom.svg";
+  const greekFlag = "/flag-gr.svg";
+  const englishFlag = "/flag-uk.svg";
 
   // Function to handle language change
   const changeLanguage = (lang: Language) => {
