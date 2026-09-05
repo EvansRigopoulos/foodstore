@@ -31,10 +31,10 @@ function AboutPage() {
         </h1>
         <span className={styles.content}>{content[language].text}</span>
         <Image
-          src={"https://i.postimg.cc/44bRwS9G/new-front.jpg"}
-          alt="A beautiful restaurant"
+          src={"/front.jpg"}
+          alt="Το Διαμάντι – το κατάστημά μας στο Ελληνικό"
           width={2400}
-          height={1600}
+          height={1596}
           className={styles.image}
           priority
         />
