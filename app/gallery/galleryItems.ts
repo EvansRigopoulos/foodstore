@@ -61,4 +61,10 @@ export const galleryItems: GalleryItem[] = [
     alt: "Diamanti grill house animation",
     type: "image",
   },
+  {
+    id: 11,
+    src: "/grill.mp4",
+    alt: "Grill in action at Diamanti",
+    type: "video",
+  },
 ];

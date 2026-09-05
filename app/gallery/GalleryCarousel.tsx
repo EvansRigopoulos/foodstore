@@ -66,20 +66,40 @@ const GalleryCarousel: React.FC<{ items: GalleryItem[] }> = ({ items }) => {
         &#10094;
       </button>
       <div className={styles.imageContainer}>
-        <Image
-          id="gallery-image"
-          src={items[currentIndex].src}
-          alt={items[currentIndex].alt}
-          width={1900}
-          height={800}
-          unoptimized={items[currentIndex].src.toLowerCase().endsWith(".gif")}
-          className={styles.media}
-          onError={(e) => {
-            console.error(`Failed to load image: ${items[currentIndex].src}`);
-          }}
-          role="img"
-          aria-describedby="image-counter"
-        />
+        {items[currentIndex].type === "video" ? (
+          <video
+            id="gallery-image"
+            key={items[currentIndex].src}
+            src={items[currentIndex].src}
+            width={1900}
+            height={800}
+            className={styles.media}
+            autoPlay
+            loop
+            muted
+            playsInline
+            aria-label={items[currentIndex].alt}
+            aria-describedby="image-counter"
+            onError={() => {
+              console.error(`Failed to load video: ${items[currentIndex].src}`);
+            }}
+          />
+        ) : (
+          <Image
+            id="gallery-image"
+            src={items[currentIndex].src}
+            alt={items[currentIndex].alt}
+            width={1900}
+            height={800}
+            unoptimized={items[currentIndex].src.toLowerCase().endsWith(".gif")}
+            className={styles.media}
+            onError={(e) => {
+              console.error(`Failed to load image: ${items[currentIndex].src}`);
+            }}
+            role="img"
+            aria-describedby="image-counter"
+          />
+        )}
         {/* Image counter for screen readers */}
         <div id="image-counter" className="sr-only">
           Image {currentIndex + 1} of {items.length}
