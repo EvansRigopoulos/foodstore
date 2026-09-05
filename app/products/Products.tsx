@@ -32,7 +32,7 @@ export const Products: LanguageMenuSections = {
         {
           name: "Kontosouvli (traditional Greek slow roasted pork)",
           description: "Traditional Greek slow roasted pork",
-          price: "22,00 €",
+          price: "22,90 €",
         },
         {
           name: "Roasted Pork with bones and skin",
@@ -42,17 +42,17 @@ export const Products: LanguageMenuSections = {
         {
           name: "Kokoretsi* (Traditional Greek lamb intestines and giblets)",
           description: "Traditional Greek delicacy",
-          price: "24,90 €",
+          price: "28,50 €",
         },
         {
           name: "Lamb Shoulder",
           description: "Tender lamb shoulder",
-          price: "25,50 €",
+          price: "28,50 €",
         },
         {
           name: "Lamb Head* (pcs)",
           description: "Traditional lamb head per piece",
-          price: "3,00 €",
+          price: "3,50 €",
         },
       ],
     },
@@ -62,17 +62,17 @@ export const Products: LanguageMenuSections = {
         {
           name: "French fries*",
           description: "Crispy golden fries",
-          price: "3,00 €",
+          price: "3,30 €",
         },
         {
           name: "Chicken nuggets* (8 pcs)",
           description: "Crispy chicken nuggets",
-          price: "7,00 €",
+          price: "7,50 €",
         },
         {
           name: "Mozzarella sticks* (8pcs)",
           description: "Crispy mozzarella sticks",
-          price: "6,00 €",
+          price: "6,50 €",
         },
       ],
     },
@@ -82,52 +82,52 @@ export const Products: LanguageMenuSections = {
         {
           name: "Tzatziki",
           description: "Traditional Greek yogurt dip",
-          price: "2,50 €",
+          price: "3,00 €",
         },
         {
           name: "Mustard sauce",
           description: "Creamy mustard",
-          price: "2,50 €",
+          price: "3,00 €",
         },
         {
           name: "Yogurt sauce",
           description: "Υogurt sauce",
-          price: "2,50 €",
+          price: "3,00 €",
         },
         {
           name: "Cheddar sauce/Barbeque sauce",
           description: "Rich cheddar or BBQ sauce",
-          price: "2,50 €",
+          price: "3,00 €",
         },
         {
           name: "Russian salad",
           description: "Traditional Russian potato salad",
-          price: "2,50 €",
+          price: "3,00 €",
         },
         {
           name: "Creamy Cheese salad",
           description: "Rich and creamy cheese salad",
-          price: "2,50 €",
+          price: "3,00 €",
         },
         {
           name: "Spicy creamy cheese salad",
           description: "Spicy version of cheese salad",
-          price: "2,50 €",
+          price: "3,00 €",
         },
         {
           name: "Aubergine salad",
           description: "Traditional eggplant salad",
-          price: "2,50 €",
+          price: "3,00 €",
         },
         {
           name: "Farmer's salad (chopped vegetables, mayo)",
           description: "Fresh chopped vegetables with mayo",
-          price: "2,50 €",
+          price: "3,00 €",
         },
         {
           name: "Budapest salad (chopped vegetables, mayo, ham)",
           description: "Hearty salad with ham",
-          price: "2,50 €",
+          price: "3,00 €",
         },
         {
           name: "Feta (200 gr)",
@@ -147,7 +147,7 @@ export const Products: LanguageMenuSections = {
         {
           name: "Tomato and cucumber salad",
           description: "Cucumber, tomato, pepper",
-          price: "4,00 €",
+          price: "4,50 €",
         },
         {
           name: "Mixed salad (Cabbage, red cabbage and carrot)",
@@ -158,7 +158,7 @@ export const Products: LanguageMenuSections = {
           name: "To Diamanti",
           description:
             "Lettuce, arugula, cherry tomatoes and honey-mustard sauce",
-          price: "5,00 €",
+          price: "5,50 €",
         },
       ],
     },
@@ -168,47 +168,57 @@ export const Products: LanguageMenuSections = {
         {
           name: "Coca cola / light/zero (330ml)",
           description: "Classic Coca Cola",
-          price: "1,50 €",
+          price: "1,60 €",
         },
         {
           name: "Fanta / Fanta blue (330ml)",
           description: "Orange or blue Fanta",
-          price: "1,50 €",
+          price: "1,60 €",
         },
         {
           name: "Sprite (330ml)",
           description: "Lemon-lime soda",
-          price: "1,50 €",
+          price: "1,60 €",
         },
         {
           name: "Schweppes Soda (330ml)",
           description: "Classic soda water",
-          price: "1,50 €",
+          price: "1,60 €",
         },
         {
           name: "Sparkling water (330ml)",
           description: "Refreshing sparkling water",
-          price: "1,50 €",
+          price: "1,60 €",
         },
         {
           name: "Coca cola / light / zero (500ml)",
           description: "Large Coca Cola",
-          price: "1,70 €",
+          price: "2,00 €",
         },
         {
           name: "Coca cola/light/zero (1.5lt)",
           description: "Family size Coca Cola",
-          price: "3,00 €",
+          price: "3,20 €",
         },
         {
           name: "Fanta (1.5lt)",
           description: "Family size Fanta",
-          price: "3,00 €",
+          price: "3,20 €",
         },
         {
           name: "Sprite (1.5lt)",
           description: "Family size Sprite",
-          price: "3,00 €",
+          price: "3,20 €",
+        },
+        {
+          name: "San Pellegrino",
+          description: "Sparkling mineral water",
+          price: "2,50 €",
+        },
+        {
+          name: "Amita (330ml)",
+          description: "Fruit juice",
+          price: "1,70 €",
         },
         {
           name: "Water 0,5 lt",
@@ -278,47 +288,52 @@ export const Products: LanguageMenuSections = {
         {
           name: "Kaiser",
           description: "Premium Austrian beer",
-          price: "1,90 €",
+          price: "2,00 €",
         },
         {
           name: "Fischer",
           description: "French premium beer",
-          price: "1,90 €",
+          price: "2,00 €",
         },
         {
           name: "Heineken",
           description: "Dutch premium lager",
-          price: "1,90 €",
+          price: "2,00 €",
         },
         {
           name: "Eza pilsner",
           description: "Greek pilsner beer",
-          price: "1,90 €",
+          price: "2,00 €",
+        },
+        {
+          name: "Mamos",
+          description: "Greek beer",
+          price: "2,00 €",
         },
         {
           name: "Amstel",
           description: "Dutch lager beer",
-          price: "1,70 €",
+          price: "1,80 €",
         },
         {
           name: "Alfa",
           description: "Greek beer",
-          price: "1,70 €",
+          price: "1,80 €",
         },
         {
           name: "Fix",
           description: "Greek classic beer",
-          price: "1,70 €",
+          price: "1,80 €",
         },
         {
           name: "Eza lager",
           description: "Greek lager beer",
-          price: "1,70 €",
+          price: "1,80 €",
         },
         {
           name: "Fix no alcohol",
           description: "Non-alcoholic beer",
-          price: "1,70 €",
+          price: "1,80 €",
         },
       ],
     },
@@ -328,17 +343,17 @@ export const Products: LanguageMenuSections = {
         {
           name: "Giatsa Tyrnavou White-Rose (Semi dry) 1 lt",
           description: "Local wine from Tyrnavos",
-          price: "4,00 €",
+          price: "4,50 €",
         },
         {
-          name: "Zitsas Ioanninon White-Rose-Red (Dry) 1/2 lt",
+          name: "Zitsas Ioanninon White-Rose-Red (Dry) 1,5 lt",
           description: "Wine from Ioannina region",
-          price: "5,00 €",
+          price: "6,00 €",
         },
         {
           name: "White-Rose-Red (Dry) 500 ml",
           description: "House wine selection",
-          price: "2,40 €",
+          price: "2,00 €",
         },
       ],
     },
@@ -348,7 +363,7 @@ export const Products: LanguageMenuSections = {
         {
           name: "Voltaraki Tsikoudia 500ml",
           description: "Traditional Cretan spirit",
-          price: "6,00 €",
+          price: "6,50 €",
         },
         {
           name: "ZOINOS Tsipouro 200ml",
@@ -377,7 +392,7 @@ export const Products: LanguageMenuSections = {
         {
           name: "Κοντοσούβλι Χοιρινό",
           description: "Τρυφερά κομμάτια χοιρινού περασμένα στη σούβλα",
-          price: "22,00 €",
+          price: "22,90 €",
         },
         {
           name: "Γουρουνοπούλα",
@@ -387,17 +402,17 @@ export const Products: LanguageMenuSections = {
         {
           name: "Κοκορέτσι*",
           description: "Το παραδοσιακό....",
-          price: "24,90 €",
+          price: "28,50 €",
         },
         {
           name: "Αρνί (Χεράκι)",
           description: "Χερακι αρνίσιο.Τελικό βάρος ≈ 1,200kg",
-          price: "25,50 €",
+          price: "28,50 €",
         },
         {
           name: "Κεφαλάκια* (το τεμάχιο)",
           description: "",
-          price: "3,00 €",
+          price: "3,50 €",
         },
       ],
     },
@@ -407,17 +422,17 @@ export const Products: LanguageMenuSections = {
         {
           name: "Πατάτες τηγανητές*",
           description: "",
-          price: "3,00 €",
+          price: "3,30 €",
         },
         {
           name: "Κοτομπουκιές* (8 τεμάχια)",
           description: "",
-          price: "7,00 €",
+          price: "7,50 €",
         },
         {
           name: "Sticks Μοτσαρέλας* (8 τεμάχια)",
           description: "",
-          price: "6,00 €",
+          price: "6,50 €",
         },
       ],
     },
@@ -427,53 +442,53 @@ export const Products: LanguageMenuSections = {
         {
           name: "Τζατζίκι",
           description: "Παραδοσιακό ελληνικό τζατζίκι",
-          price: "2,50 €",
+          price: "3,00 €",
         },
         {
           name: "Σως Μουστάρδας",
           description: "Η κλασική... Μαγιονεζα-Μουστάρδα",
-          price: "2,50 €",
+          price: "3,00 €",
         },
         {
           name: "Σως Γιαουρτιου",
           description: "Ελαφριά και δροσερή ... Γιαούρτι με μυρωδικά",
-          price: "2,50 €",
+          price: "3,00 €",
         },
         {
           name: "Σως Cheddar / Σως Barbeque",
           description: "Οι γνωστές....",
-          price: "2,50 €",
+          price: "3,00 €",
         },
         {
           name: "Ρώσικη",
           description: "Η διαχρονική...",
-          price: "2,50 €",
+          price: "3,00 €",
         },
         {
           name: "Τυροσαλάτα",
           description: "",
-          price: "2,50 €",
+          price: "3,00 €",
         },
         {
           name: "Τυροκαυτερή",
           description: "Ελαφρώς πικάντικη",
-          price: "2,50 €",
+          price: "3,00 €",
         },
         {
           name: "Μελιτζανοσαλάτα",
           description: "Παραδοσιακή μελιτζανοσαλάτα",
-          price: "2,50 €",
+          price: "3,00 €",
         },
         {
           name: "Κηπουρού",
           description:
             "Ψιλοκομμένα λαχανικά με μαγιονέζα.Ταιριάζει με σαλάτε και με ψητά.",
-          price: "2,50 €",
+          price: "3,00 €",
         },
         {
           name: "Βουδαπέστης",
           description: "Ψιλοκομμένο ζαμπόν με μαγιονέζα",
-          price: "2,50 €",
+          price: "3,00 €",
         },
         {
           name: "Φέτα (200 gr)",
@@ -493,7 +508,7 @@ export const Products: LanguageMenuSections = {
         {
           name: "Αγγουροντομάτα",
           description: "Αγγούρι - Ντομάτα - Πιπεριά",
-          price: "4,00 €",
+          price: "4,50 €",
         },
         {
           name: "Ανάμεικτη",
@@ -513,47 +528,57 @@ export const Products: LanguageMenuSections = {
         {
           name: "Coca cola / light/zero (330ml)",
           description: "",
-          price: "1,50 €",
+          price: "1,60 €",
         },
         {
           name: "Fanta / Fanta μπλε (330ml)",
           description: "",
-          price: "1,50 €",
+          price: "1,60 €",
         },
         {
           name: "Sprite (330ml)",
           description: "",
-          price: "1,50 €",
+          price: "1,60 €",
         },
         {
           name: "Schweppes Σόδα (330ml)",
           description: "",
-          price: "1,50 €",
+          price: "1,60 €",
         },
         {
           name: "Σουρωτή (330ml)",
           description: "",
-          price: "1,50 €",
+          price: "1,60 €",
         },
         {
           name: "Coca cola / light / zero (500ml)",
           description: "",
-          price: "1,70 €",
+          price: "2,00 €",
         },
         {
           name: "Coca cola/light/zero (1.5lt)",
           description: "",
-          price: "3,00 €",
+          price: "3,20 €",
         },
         {
           name: "Fanta (1.5lt)",
           description: "",
-          price: "3,00 €",
+          price: "3,20 €",
         },
         {
           name: "Sprite (1.5lt)",
           description: "",
-          price: "3,00 €",
+          price: "3,20 €",
+        },
+        {
+          name: "Πελεγκρίνο",
+          description: "Ανθρακούχο μεταλλικό νερό",
+          price: "2,50 €",
+        },
+        {
+          name: "Αμίτα (330ml)",
+          description: "Φυσικός χυμός",
+          price: "1,70 €",
         },
         {
           name: "Νερό μικρό (0,5 lt)",
@@ -623,47 +648,52 @@ export const Products: LanguageMenuSections = {
         {
           name: "Kaiser",
           description: "Αυστριακή premium μπίρα",
-          price: "1,90 €",
+          price: "2,00 €",
         },
         {
           name: "Fischer",
           description: "Γαλλική premium μπίρα",
-          price: "1,90 €",
+          price: "2,00 €",
         },
         {
           name: "Heineken",
           description: "Ολλανδική premium lager",
-          price: "1,90 €",
+          price: "2,00 €",
         },
         {
           name: "Eza pilsner",
           description: "Ελληνική pilsner μπίρα",
-          price: "1,90 €",
+          price: "2,00 €",
+        },
+        {
+          name: "Μάμος",
+          description: "Ελληνική μπίρα",
+          price: "2,00 €",
         },
         {
           name: "Amstel",
           description: "Ολλανδική lager μπίρα",
-          price: "1,70 €",
+          price: "1,80 €",
         },
         {
           name: "Alfa",
           description: "Ελληνική μπίρα",
-          price: "1,70 €",
+          price: "1,80 €",
         },
         {
           name: "Fix",
           description: "Κλασική ελληνική μπίρα",
-          price: "1,70 €",
+          price: "1,80 €",
         },
         {
           name: "Eza lager",
           description: "Ελληνική lager μπίρα",
-          price: "1,70 €",
+          price: "1,80 €",
         },
         {
           name: "Fix άνευ",
           description: "Μπίρα χωρίς αλκοόλ",
-          price: "1,70 €",
+          price: "1,80 €",
         },
       ],
     },
@@ -676,9 +706,9 @@ export const Products: LanguageMenuSections = {
           price: "4,50 €",
         },
         {
-          name: "Ζίτσας Ιωαννίνων Λευκό-Ροζέ-Κόκκινο (Ξηρό) 1/2 lt",
+          name: "Ζίτσας Ιωαννίνων Λευκό-Ροζέ-Κόκκινο (Ξηρό) 1,5 lt",
           description: "Κρασί από την περιοχή Ιωαννίνων",
-          price: "5,50 €",
+          price: "6,00 €",
         },
         {
           name: "Λευκό - Ροζέ - Κόκκινο (Ξηρό) 500 ml",
@@ -698,7 +728,7 @@ export const Products: LanguageMenuSections = {
         {
           name: "ZOINOS Τσίπουρο 200 ml",
           description: "Εκλεκτό ελληνικό τσίπουρο",
-          price: "5,50 €",
+          price: "5,00 €",
         },
       ],
     },
