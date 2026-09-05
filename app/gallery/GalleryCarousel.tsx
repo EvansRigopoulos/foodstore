@@ -15,6 +15,7 @@ export type GalleryItem = {
 const GalleryCarousel: React.FC<{ items: GalleryItem[] }> = ({ items }) => {
   const [currentIndex, setCurrentIndex] = useState(0);
   const [isAutoScrolling, setIsAutoScrolling] = useState(true);
+  const [reducedMotion, setReducedMotion] = useState(false);
   const { language } = useLanguage();
 
   const nextItem = () => {
@@ -38,9 +39,24 @@ const GalleryCarousel: React.FC<{ items: GalleryItem[] }> = ({ items }) => {
     return () => clearInterval(interval);
   }, [isAutoScrolling, items.length]);
 
+  // Respect the visitor's reduced-motion preference: don't auto-advance
+  // for users who have asked their device to reduce motion.
+  useEffect(() => {
+    const mq = window.matchMedia("(prefers-reduced-motion: reduce)");
+    const apply = () => {
+      setReducedMotion(mq.matches);
+      if (mq.matches) setIsAutoScrolling(false);
+    };
+    apply();
+    mq.addEventListener("change", apply);
+    return () => mq.removeEventListener("change", apply);
+  }, []);
+
   // Pause auto-scroll on hover
   const handleMouseEnter = () => setIsAutoScrolling(false);
-  const handleMouseLeave = () => setIsAutoScrolling(true);
+  const handleMouseLeave = () => {
+    if (!reducedMotion) setIsAutoScrolling(true);
+  };
 
   const title = {
     en: "Gallery",
