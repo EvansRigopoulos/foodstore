@@ -43,7 +43,7 @@ const FooterWithMap: React.FC = () => {
               <h4>{language === "en" ? "Phones:" : "Τηλέφωνα:"}</h4>
               <p>+30 210 9635560</p>
               <p>+30 210 9635561</p>
-              <p>+30 698 2314186</p>
+              <p>+30 697 2842118</p>
               <p>Email: kotopoulatodiamanti@gmail.com</p>
             </div>
           </div>
@@ -261,7 +261,7 @@ const FooterWithMap: React.FC = () => {
           <h4>{language === "en" ? "Phones:" : "Τηλέφωνα:"}</h4>
           <p>+30 210 9635560</p>
           <p>+30 210 9635561</p>
-          <p>+30 698 2314186</p>
+          <p>+30 697 2842118</p>
           <p>
             {language === "en"
               ? "Email: kotopoulatodiamanti@gmail.com"
