@@ -23,9 +23,35 @@ const alegreya = Alegreya({
 });
 
 export const metadata: Metadata = {
-  title: "Diamanti Restaurant",
-  description: "The best restaurant in town",
+  metadataBase: new URL("https://www.kotopoulatodiamanti.gr"),
+  title: "Το Διαμάντι – Ψητοπωλείο",
+  description:
+    "Το Διαμάντι – ψητοπωλείο στο Ελληνικό. Κοτόπουλο σχάρας & σούβλας, κοντοσούβλι, κοκορέτσι, γουρουνοπούλα και παραδοσιακές σαλάτες. Delivery 12:00–23:00.",
   robots: "index, follow",
+  openGraph: {
+    type: "website",
+    locale: "el_GR",
+    url: "https://www.kotopoulatodiamanti.gr",
+    siteName: "Το Διαμάντι",
+    title: "Το Διαμάντι – Ψητοπωλείο στο Ελληνικό",
+    description:
+      "Κοτόπουλο σχάρας & σούβλας, κοντοσούβλι, κοκορέτσι, γουρουνοπούλα και παραδοσιακές σαλάτες. Delivery 12:00–23:00.",
+    images: [
+      {
+        url: "/gallery/grill.jpg",
+        width: 2560,
+        height: 1703,
+        alt: "Το Διαμάντι – ψητοπωλείο στο Ελληνικό",
+      },
+    ],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Το Διαμάντι – Ψητοπωλείο στο Ελληνικό",
+    description:
+      "Κοτόπουλο σχάρας & σούβλας, κοντοσούβλι, κοκορέτσι και παραδοσιακές σαλάτες. Delivery 12:00–23:00.",
+    images: ["/gallery/grill.jpg"],
+  },
 };
 
 export default function RootLayout({
