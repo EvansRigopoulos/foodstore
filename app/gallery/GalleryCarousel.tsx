@@ -57,16 +57,17 @@ const GalleryCarousel: React.FC<{ items: GalleryItem[] }> = ({ items }) => {
     >
       <h2 id="gallery-title">{title[language]}</h2>
 
-      <button
-        className={styles.prevButton}
-        onClick={prevItem}
-        aria-label="Previous image"
-        aria-controls="gallery-image"
-      >
-        &#10094;
-      </button>
-      <div className={styles.imageContainer}>
-        {items[currentIndex].type === "video" ? (
+      <div className={styles.mediaRow}>
+        <button
+          className={styles.prevButton}
+          onClick={prevItem}
+          aria-label="Previous image"
+          aria-controls="gallery-image"
+        >
+          &#10094;
+        </button>
+        <div className={styles.imageContainer}>
+          {items[currentIndex].type === "video" ? (
           <video
             id="gallery-image"
             key={items[currentIndex].src}
@@ -119,15 +120,16 @@ const GalleryCarousel: React.FC<{ items: GalleryItem[] }> = ({ items }) => {
         >
           {isAutoScrolling ? "⏸️" : "▶️"}
         </button>
+        </div>
+        <button
+          className={styles.nextButton}
+          onClick={nextItem}
+          aria-label="Next image"
+          aria-controls="gallery-image"
+        >
+          &#10095;
+        </button>
       </div>
-      <button
-        className={styles.nextButton}
-        onClick={nextItem}
-        aria-label="Next image"
-        aria-controls="gallery-image"
-      >
-        &#10095;
-      </button>
     </div>
   );
 };
