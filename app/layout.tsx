@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import { Inter } from "next/font/google";
+import { Alegreya, Alegreya_Sans } from "next/font/google";
 import "./globals.css";
 import { SpeedInsights } from "@vercel/speed-insights/next";
 import { Analytics } from "@vercel/analytics/next";
@@ -9,7 +9,18 @@ import Container from "@/components/global/container";
 import Home from "./page";
 import FooterWithMap from "@/components/footer/footer";
 
-const inter = Inter({ subsets: ["latin"] });
+const alegreyaSans = Alegreya_Sans({
+  subsets: ["latin", "greek"],
+  weight: ["400", "500", "700"],
+  variable: "--font-body",
+  display: "swap",
+});
+
+const alegreya = Alegreya({
+  subsets: ["latin", "greek"],
+  variable: "--font-heading",
+  display: "swap",
+});
 
 export const metadata: Metadata = {
   title: "Diamanti Restaurant",
@@ -61,7 +72,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
           }}
         />
       </head>
-      <body className={inter.className}>
+      <body className={`${alegreyaSans.variable} ${alegreya.variable}`}>
         {/* Google Tag Manager (noscript) */}
         <noscript>
           <iframe
