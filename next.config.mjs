@@ -79,7 +79,7 @@ const nextConfig = {
               style-src 'self' 'unsafe-inline' fonts.googleapis.com;
               img-src 'self' data: blob: https: *.postimg.cc *.fbcdn.net *.amazonaws.com *.google.com *.facebook.com *.googletagmanager.com *.google-analytics.com;
               font-src 'self' fonts.gstatic.com;
-              connect-src 'self' *.vercel.com *.vercel-insights.com *.google-analytics.com *.analytics.google.com *.googletagmanager.com;
+              connect-src 'self' *.vercel.com *.vercel-insights.com *.google-analytics.com *.analytics.google.com *.googletagmanager.com *.g.doubleclick.net *.google.com;
               frame-src 'self' *.google.com;
             `
               .replace(/\s+/g, " ")
