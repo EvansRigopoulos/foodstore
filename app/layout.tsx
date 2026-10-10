@@ -128,7 +128,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
         {/* Google tag (gtag.js) */}
         <script
           async
-          src="https://www.googletagmanager.com/gtag/js?id=G-4X9NWXF5PE"
+          src="https://www.googletagmanager.com/gtag/js?id=G-HJTJLS4EL8"
         />
         <script
           dangerouslySetInnerHTML={{
@@ -136,7 +136,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
               window.dataLayer = window.dataLayer || [];
               function gtag(){dataLayer.push(arguments);}
               gtag('js', new Date());
-              gtag('config', 'G-4X9NWXF5PE');
+              gtag('config', 'G-HJTJLS4EL8');
               
               // Handle analytics blocking gracefully
               window.addEventListener('error', function(e) {
